@@ -104,6 +104,8 @@ img{
 .boton{
     background-color: var(--colorPrimario);
     padding: 2rem 3rem;
+    transition: 1s;
+    cursor: pointer;
 }
 
 .boton:hover{
@@ -119,4 +121,3 @@ img{
 
 .titulo p{
     font-size: 3rem;
-}
