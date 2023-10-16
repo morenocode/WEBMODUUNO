@@ -47,3 +47,76 @@ img{
     width: 100%;
     display: block;
 }
+
+/**SLIDER**/
+
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/baner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 620px;
+    position: relative;
+    padding-top: 3rem;
+    animation: animate 10s infinite;
+    transition: 0.5s;
+}
+
+@keyframes animate{
+    20%{
+        background-image: url(../img/baner3.jpg);
+        background-size: cover;
+    }
+
+    40%{
+        background-image: url(../img/baner2.jpg);
+        background-size: cover;
+    }
+
+    80%{
+        background-image: url(../img/baner1.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(../img/parallax1.jpg);
+        background-size: cover;
+    }
+
+}
+
+
+/**SLIDER**/
+
+.titulo{
+    color:var(--colorBlanco)
+}
+
+.titulo h2{
+    color:var(--colorBlanco);
+    font-size: 10rem;
+}
+
+.boton{
+    background-color: var(--colorPrimario);
+    padding: 2rem 3rem;
+}
+
+.boton:hover{
+    background-color: var(--colorBlanco);   
+}
+
+.boton a{
+    color: var(--colorBlanco);
+}
+.boton a:hover{
+    color: var(--colorPrimario);
+}
+
+.titulo p{
+    font-size: 3rem;
+}
