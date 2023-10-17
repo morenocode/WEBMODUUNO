@@ -16,27 +16,19 @@ html {
 body{
     font-size: 1.6rem;
     font-family: var(--fuentePrincipal);
-    background-color: rgb(255, 0, 0);
+    background-color: var(--colorFondo);
     line-height: 1.5;
 }
 /**GLOBALES**/
 
-a{
+.menu a{
     text-decoration: none;
-    color: var(--colorFondo);
-    font-size: 1.2rem;
+    color: var(--colorPrimario);
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.4s; 
 }
-
-a:hover{
-    text-decoration: none;
-    color: var(--colorOrange);
-    font-size: 1.3rem;
-}
-
-
 
 .contenedor{
     width:min(90%,120rem);
@@ -50,17 +42,39 @@ img{
 
 /****MENU***/
 header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
-.menu{
+.titulo h1{
+    text-align: center;
+    margin: 5rem 0;
+    color: var(--colorPrimario);
+    font-size: 5rem;
+}
+.menu-inicial{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    column-gap: 5rem;
 }
 
+.menu-inicial li{
+    text-align: left;
+}
+
+.submenu {
+    display: none;
+}
+.li-padre:hover .submenu {
+    display: block;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+
+}
 /**SLIDER**/
+
 
 
 .slider{
@@ -69,7 +83,7 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../img/baner1.jpg);
+    background-image: url(../img/slider2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 620px;
@@ -81,21 +95,21 @@ header{
 
 @keyframes animate{
     20%{
-        background-image: url(../img/baner3.jpg);
+        background-image: url(../img/slider3.png);
         background-size: cover;
     }
 
     40%{
-        background-image: url(../img/baner2.jpg);
+        background-image: url(../img/slider1.png);
         background-size: cover;
     }
 
     80%{
-        background-image: url(../img/baner1.jpg);
+        background-image: url(../img/slider2.png);
         background-size: cover;
     }
     100%{
-        background-image: url(../img/parallax1.jpg);
+        background-image: url(../img/slider1.png);
         background-size: cover;
     }
 
@@ -111,26 +125,34 @@ header{
 .titulo h2{
     color:var(--colorBlanco);
     font-size: 10rem;
+    margin: 0;
+}
+.titulo p{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.botones{
+    display: flex;
+    column-gap: 3rem;
 }
 
 .boton{
+    text-decoration: none;
+    color: var(--colorBlanco);
     background-color: var(--colorPrimario);
     padding: 2rem 3rem;
-    transition: 1s;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s; 
     cursor: pointer;
 }
 
 .boton:hover{
-    background-color: var(--colorBlanco);   
-}
-
-.boton a{
-    color: var(--colorBlanco);
-}
-.boton a:hover{
+    text-decoration: none;
     color: var(--colorPrimario);
-}
-
-.titulo p{
-    font-size: 3rem;
+    background-color: var(--colorBlanco);
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
 }
