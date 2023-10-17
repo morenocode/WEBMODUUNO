@@ -3,6 +3,7 @@
     --colorPrimario:#032890;
     --colorFondo:#ffffff;
     --colorBlanco:#ffffff;
+    --colorWhatsapp:#2EB343;
 }
 *{
     margin: 0;
@@ -226,7 +227,7 @@ nav > ul > li > ul > li > a:hover{
 
 .botones{
     display: flex;
-    column-gap: 3rem;
+    column-gap: 2rem;
 }
 
 .boton{
@@ -246,5 +247,63 @@ nav > ul > li > ul > li > a:hover{
     color: var(--colorPrimario);
     background-color: var(--colorBlanco);
     padding: 2rem 3rem;
+    font-size: 1.6rem;
+}
+
+
+/**MAIN**/
+.main{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.main h2{
+    font-size: 3.5rem;
+}
+
+.galeria-principal{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 2rem;
+    
+
+}
+
+.galeria-principal__uno h3{
+    color: #032890;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.galeria-principal__uno img{
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.40); /* Estándar */
+    transition: 1s;
+    cursor: pointer;
+}
+
+.galeria-principal__uno img:hover{
+    transform: scale(1.05); /* La imagen se amplía ligeramente */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);/* Estándar */
+}
+
+.boton-whasatpp{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background-color: var(--colorPrimario);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s; 
+    cursor: pointer;
+    border-bottom-right-radius:30px;
+    border-top-left-radius:30px;
+}
+.boton-whasatpp:hover{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background-color: var(--colorWhatsapp);
+    padding: 1.2rem 2.2rem;
     font-size: 1.6rem;
 }
