@@ -311,19 +311,36 @@ li{
     text-decoration: none;
     color: var(--colorBlanco);
     background-color: var(--colorPrimario);
-    padding: 2rem 3rem;
-    font-size: 1.5rem;
+    padding: 1.7rem 2.7rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s; 
     cursor: pointer;
 }
 
+@media (min-width: 768px) { 
+    .boton{
+        text-decoration: none;
+        color: var(--colorBlanco);
+        background-color: var(--colorPrimario);
+        padding: 2rem 3rem;
+        font-size: 1.5rem;
+    }
+    .boton:hover{
+        text-decoration: none;
+        color: var(--colorPrimario);
+        background-color: var(--colorBlanco);
+        padding: 2rem 3rem;
+        font-size: 1.6rem;
+    }
+ }
+
 .boton:hover{
     text-decoration: none;
     color: var(--colorPrimario);
     background-color: var(--colorBlanco);
-    padding: 2rem 3rem;
+    padding: 1.6rem 2.7rem;
     font-size: 1.6rem;
 }
 
