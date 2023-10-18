@@ -557,7 +557,6 @@ footer .head{
 
 .productos-variados{
     margin-bottom: 10rem;
-    background-color: ;
 }
 
 .productos-variados h2{
@@ -566,13 +565,17 @@ footer .head{
 
 .productos{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 4rem;
 }
 
-.producto{
-
-}
+@media (min-width: 768px) { 
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 4rem;
+    }
+ }
 
 .producto img{
     cursor: pointer;
