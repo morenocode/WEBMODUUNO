@@ -429,3 +429,76 @@ li{
     background-color: white;
     padding: 0 1rem;
 }
+
+/**PRODUCTOS VARIADOS**/
+
+.productos-variados{
+    margin-bottom: 10rem;
+    background-color: ;
+}
+
+.productos-variados h2{
+    margin-bottom: 2rem;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem;
+}
+
+.producto{
+
+}
+
+.producto img{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.producto img:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.precio{
+    color: var(--colorPrimario);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.compra{
+    display: grid;
+    grid-template-columns:10rem 1fr;
+    align-items: center;
+    text-align: center;
+    column-gap: 2rem;
+}
+
+.boton-compra{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background-color: var(--colorPrimario);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s; 
+    cursor: pointer;
+    
+}
+.boton-compra:hover{
+    text-decoration: none;
+    color: var(--colorBlanco);
+    background-color: red;
+    padding: 1.2rem 2.2rem;
+    font-size: 1.6rem;
+}
+
+.precio{
+    color: var(--colorPrimario);
+    padding: 2rem 0;
+    border:4px dotted var(--colorPrimario)
+}
