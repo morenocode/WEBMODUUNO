@@ -522,7 +522,37 @@ p{
 .btn{
     border-radius: 0.2rem;
 }
-
+/* Fin descuento */
+/* INICIO FOOTER */
+footer .head{
+    display: flex;
+    justify-content: center;
+    /* row-gap: 100px; */
+    gap: 50px;
+}
+.head h3 ,.head p{
+    margin:10px auto;
+}
+.head h3{
+    font-size: 1.6rem;
+}
+.head p{
+    font-size: 1.4rem;
+}
+/* .promo{
+    display: flex;
+    flex-direction: column;
+}*/
+.informacion .informacion_email{
+    display: flex;
+    /* flex-direction: column; */
+} 
+.informacion .informacion_btn{
+    background: #C01818;
+    border-radius: 0.2rem;
+    padding:1rem 3.5rem;
+}
+/* FIN FOOTER */
 /**PRODUCTOS VARIADOS**/
 
 .productos-variados{
