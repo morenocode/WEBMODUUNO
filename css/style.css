@@ -452,13 +452,13 @@ hr {
 .contenedor__servicios{
     display: flex;
     align-items: center;
-    column-gap: 15px;
+    column-gap: 1.5rem;
     /* row-gap: 50px; */
 }
 .contenedor__servicios_info{
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 1.4rem;
     justify-content:center;
     align-items: start;
     
@@ -467,6 +467,62 @@ hr {
 p{
     margin: 0px;
 }
+/* FIN SERVICIOS */
+/* INICIO DESCUENTO */
+.descuento{
+    background-image: radial-gradient(circle at 43.21% 53.92%, #3d50e5 0, #0f46dc 50%, #003dd3 100%);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    height: 17.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.descuento img{
+    width: 15rem;
+    transform: scale(1.1);
+}
+
+.descuento_info{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    column-gap: 1.5rem;
+    
+}
+.descuento_info .descuento_p p{
+    margin: 0;
+}
+.descuento_info .descuento_p p:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.descuento_licencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+}
+.contenedor  a{
+    text-decoration: none;
+    color: var(--colorBlanco);
+}
+.contenedor .descuento_btn{
+    background: var(--colorPrimario);
+    padding: 1rem;
+}
+.contenedor .licencia_btn{
+    background: #C01818;
+    padding: 1rem;
+}
+.btn{
+    border-radius: 0.2rem;
+}
+
 /**PRODUCTOS VARIADOS**/
 
 .productos-variados{
