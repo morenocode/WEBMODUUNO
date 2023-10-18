@@ -246,7 +246,7 @@ li{
     background-image: url(../img/slider2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 620px;
+    height: 500px;
     position: relative;
     padding-top: 3rem;
     animation: animate 10s infinite;
@@ -254,6 +254,12 @@ li{
     position:static;
     margin-top: 17rem;
 }
+
+@media (min-width: 768px) { 
+    .slider{
+        height: 620px;
+    }
+ }
 
 @keyframes animate{
     20%{
