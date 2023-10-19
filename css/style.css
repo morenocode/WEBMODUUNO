@@ -519,6 +519,12 @@ hr {
     column-gap: 1.5rem;
     /* row-gap: 50px; */
 }
+.contenedor__servicios svg{
+    transition: all ease 0.3s;
+}
+.contenedor__servicios svg:hover{
+    transform: scale(0.9);
+}
 .contenedor__servicios_info{
     display: flex;
     flex-direction: column;
@@ -534,8 +540,7 @@ p{
 /* FIN SERVICIOS */
 /* INICIO DESCUENTO */
 .descuento{
-    background-image: radial-gradient(circle at 43.21% 53.92%, #3d50e5 0, #0f46dc 50%, #003dd3 100%);
-    /* background-size: cover;
+    background: var(--colorPrimario);    /* background-size: cover;
     background-repeat: no-repeat; */
     height: 17.3rem;
     display: flex;
@@ -559,8 +564,10 @@ p{
 }
 .descuento_info .descuento_p p{
     margin: 0;
+    color: #999999;
 }
 .descuento_info .descuento_p p:first-child{
+    color: var(--colorBlanco);
     font-size: 2rem;
     font-weight: 600;
 }
@@ -570,13 +577,15 @@ p{
     align-items: center;
     justify-content: center;
     text-transform: none;
+    color: #999999;
 }
 .contenedor  a{
     text-decoration: none;
     color: var(--colorBlanco);
 }
 .contenedor .descuento_btn{
-    background: var(--colorPrimario);
+    border:0.2rem solid var(--colorBlanco);
+    border-radius: 0.5rem;
     padding: 1rem;
 }
 .contenedor .licencia_btn{
