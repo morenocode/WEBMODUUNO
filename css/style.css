@@ -617,6 +617,8 @@ footer .head{
     padding:1rem 3.5rem;
 }
 /* FIN FOOTER */
+
+
 /**PRODUCTOS VARIADOS**/
 
 .productos-variados{
@@ -691,4 +693,84 @@ footer .head{
     color: var(--colorPrimario);
     padding: 2rem 0;
     border:4px dotted var(--colorPrimario)
+}
+
+/**NOVEDADES**/
+
+.fondo-novedades{
+    background-color: var(--colorPrimario);
+}
+
+.novedades{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    color: var(--colorBlanco);
+}
+
+
+.mensajes{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.mensaje-contenido{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.mensaje-contenido h4{
+    font-size: 2rem;
+    margin: 0;
+}
+.mensaje-contenido p{
+    margin: 0;
+}
+
+.escribir-email{
+    background-color: var(--colorBlanco);
+    border-radius:5px;
+    padding: 1rem 3rem;
+    border: none;
+}
+
+.boton-suscribe{
+    background-color: var(--colorPrimario);
+    color: var(--colorBlanco);
+    border-radius:5px;
+    padding: 1rem 3rem;
+    border: 1px solid var(--colorBlanco);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.siguenos{
+ display: flex;
+ grid-template-columns: 1fr 1fr 1fr; 
+ grid-template-areas: "facebook" "instagram" "parrafo";
+ gap: 1rem;
+ justify-content: end;
+ padding: 4rem 0;
+}
+
+.siguenos p{
+    grid-area:parrafo ;
+}
+
+.facebook{
+    grid-area: facebook;
+}
+
+.instagram{
+    grid-area: facebook;
 }
