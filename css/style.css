@@ -598,20 +598,28 @@ p{
 /* Fin descuento */
 /* INICIO FOOTER */
 footer .head{
-    display: flex;
-    justify-content: center;
-    /* row-gap: 100px; */
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 2rem;
 }
-.head h3 ,.head p{
-    margin:10px auto;
+
+@media (min-width: 768px) {
+    footer .head{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 10rem;
+    }
+    .head h3 ,.head p{
+        margin:10px auto;
+    }
+    .head h3{
+        font-size: 1.6rem;
+    }
+    .head p{
+        font-size: 1.4rem;
+    }  
 }
-.head h3{
-    font-size: 1.6rem;
-}
-.head p{
-    font-size: 1.4rem;
-}
+
 /* .promo{
     display: flex;
     flex-direction: column;
