@@ -867,46 +867,6 @@ p{
 
 /* FIN SERVICIOS */
 
-/* INICIO FOOTER */
-footer .head{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    column-gap: 2rem;
-}
-
-@media (min-width: 768px) {
-    footer .head{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        column-gap: 10rem;
-    }
-    .head h3 ,.head p{
-        margin:10px auto;
-    }
-    .head h3{
-        font-size: 1.6rem;
-    }
-    .head p{
-        font-size: 1.4rem;
-    }  
-}
-
-/* .promo{
-    display: flex;
-    flex-direction: column;
-}*/
-.informacion .informacion_email{
-    display: flex;
-    /* flex-direction: column; */
-} 
-.informacion .informacion_btn{
-    background: #C01818;
-    border-radius: 0.2rem;
-    padding:1rem 3.5rem;
-}
-/* FIN FOOTER */
-
-
 /**PRODUCTOS VARIADOS**/
 
 .productos-variados{
@@ -1188,3 +1148,53 @@ p{
     }
 
  }
+
+/**INICIO FOOTER **/
+footer{
+    margin-bottom: 5rem;
+}
+
+footer .head{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    footer .head{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 10rem;
+    }
+    .head h3 ,.head p{
+        margin:10px auto;
+    }
+    .head h3{
+        font-size: 1.6rem;
+    }
+    .head p{
+        font-size: 1.4rem;
+    }  
+}
+
+/* .promo{
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+.informacion .informacion_email{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+} 
+.informacion .informacion_btn{
+    background: #C01818;
+    border-radius: 0.2rem;
+    padding:1rem 3.5rem;
+}
+
+
+
+
+/* FIN FOOTER */
